@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: arial, sans-serif;
+}
+nav {
+  max-width: 1440px;
+  margin: 30px auto;
+  text-align: right;
+}
+
+section {
+  max-width: 1440px;
+  margin: 30px auto;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-family: arial;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #555;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+nav a.reservation {
+  font-size: 2.2rem;
+  border: 2px solid #555;
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  margin-right: 50px;
+  margin-left: 80px;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #555;
+  color: black;
+}
+
+nav a.reservation:hover {
+  background-color: royalblue;
+  color: #eee;
+  border-color: royalblue;
+  transition: .4s;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  /*
+  max-width: 1920px;
+  margin: 0 auto;
+*/
+  background-image: url(../img/Fotolia_55530363_Subscription_Monthly_M.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+header > * {
+  position: absolute;
+}
+
+header img {
+  top: 30px;
+  left: 60px;
+}
+
+header h1 {
+  top: 45%;
+  width: 100%;
+  padding: 20px;
+  font-size: 60px;
+  background-color: rgba(0, 0, 0, .5);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+header button {
+  bottom: 80px;
+  right: 80px;
+  font-size: 40px;
+  padding: 10px 50px;
+  font-family: roboto condensed, arial, sans-serif;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: white;
+  border: 4px solid white;
+  transition: .3s;
+}
+
+header button:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.o-firmie {
+  background-color: F3F1F0;
+}
+
+.o-firmie p {
+  font-size: 25px;
+}
+
+.offer p {
+  font-size: 25px;
+}
+
+.o-firmie .cytat-fpd {
+  text-align: center;
+}
+
+.o-firmie .cytat-fpd q {
+  font-size: 32px;
+  font-style: italic;
+}
+
+.o-firmie .cytat-fpd cite {
+  font-size: 25px;
+  font-style: normal;
+}
+
+.wrapper {
+  display: block;
+  position: relative;
+  top: 90%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.button{
+    text-decoration: none;
+    text-align: center;
+    color: #3cbabe;
+    border: 2px solid #3cbabe;
+    border-radius: 4px;
+    position: absolute;
+    width: 150px;
+    line-height: 40px;
+    display: inline-block;
+    font-family: Arial;
+    font-weight: 600;
+    overflow: hidden;
+}
+.button:before {
+    content: "";
+    background-color: rgba(255,255,255,0.5);
+    height: 100%;
+    width: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -70px;
+    transform: skewX(-45deg) translateX(0px);
+    transition: none;
+  }
+.button:hover{
+    background-color: #3cbabe;
+    color: #ffffff;
+    border-bottom: 2px solid #319598;
+}
+
+.button:hover:before{
+    transform: skewX(-45deg) translateX(250px);
+    transition: all 0.4s ease-in;
+}
+
+.jumbotron {
+  margin: 0 auto;
+  width: 70%;
+  /* background-color: red; */
+  border-radius: 10%;
+}
+
+main {
+  max-width: 1440px;
+  margin: 5vh auto;
+  font-size: 0;
+}
+
+main p.description {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 0 30px 50px 30px;
+  line-height: 180%;
+}
+
+
+main div.feature {
+  display: inline-block;
+  width: 33.33%;
+}
+
+main div.image {
+  height: 200px;
+  background-color: royalblue;
+  margin: 20px 30px;
+  text-align: center;
+  line-height: 200px;
+}
+
+main div.image:hover {
+  background-color: aqua;
+  transform-style:preserve-3d;
+}
+
+main h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #222;
+
+}
+
+.footer {
+  height: 600px;
+  background-color: grey;
+  background-position: cover;
+}
+
+@media (max-width: 1024px) {
+  header {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+  header img {
+    width: 25%;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  header button {
+    bottom: 30px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 533px) and (orientation: landscape) {
+
+
+  header h1 {
+    top: 40%;
+    font-size: 20px;
+  }
+
+  header button {
+    bottom: 30px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+  header img {
+    left: 10%;
+    width: 80%;
+
+  }
+
+  header h1 {
+    top: 35%;
+    font-size: 30px;
+    line-height: 180%;
+  }
+
+  header button {
+    right: 10%;
+    width: 80%;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 360px) and (orientation: portrait) {
+
+  header h1 {
+    font-size: 24px;
+  }
+
+}
+
+@media (max-width: 320px) and (orientation: portrait) {
+
+  header button {
+    font-size: 26px;
+  }
+}
+
+section {
+  width: 86%;
+  margin: 80px auto 0;
+
+}
+
+section p {
+  line-height: 1.7;
+  font-size: 14px;
+
+}
